@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jewellery Cost Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="calculator">
+        <h2>Jewellery Cost Calculator</h2>
+
+        <!-- Materials Cost -->
+        <div>
+            <label for="materialSelection">Select Material:</label>
+            <select id="materialSelection">
+                <option value="copper">Copper</option>
+                <option value="silver">Silver</option>
+                <option value="gold">Gold</option>
+            </select>
+        
+            <label for="gramsUsed">Grams Used:</label>
+            <input type="number" step="0.01" id="gramsUsed">
+        </div>
+
+        <!-- Labour Cost -->
+        <div>
+            <label for="labourHours">Hours of Labour:</label>
+            <input type="number" id="labourHours">
+
+            <label for="labourCost">Cost per Hour:</label>
+            <input type="number" id="labourCost">
+        </div>
+
+        <!-- Additional Costs -->
+        <div>
+            <label for="additionalCost">Additional Costs:</label>
+            <input type="number" id="additionalCost">
+        </div>
+
+        <!-- Calculate Button -->
+        <button id="calculate">Calculate</button>
+
+        <!-- Display Result -->
+        <div>
+            <label for="materialCostResult">Material Cost:</label>
+            <input type="text" id="materialCostResult" readonly>
+        
+            <label for="labourCostResult">Labour Cost:</label>
+            <input type="text" id="labourCostResult" readonly>
+        
+            <label for="totalSellingPrice">Total Selling Price:</label>
+            <input type="text" id="totalSellingPrice" readonly>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
