@@ -31,7 +31,7 @@ document.getElementById("calculate").addEventListener("click", function() {
     let totalCost = totalMaterialCost + totalLabourCost + additionalCost;
 
     // Assume a markup for selling price, for instance, 20% profit
-    let sellingPrice = totalCost * 1.30;
+    let sellingPrice = totalCost * 1.33;
 
     // Display the results
     document.getElementById("materialCostResult").value = "$" + totalMaterialCost.toFixed(2);
